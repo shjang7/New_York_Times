@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+header {
+  border: 1px blue solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+
+header img {
+  height: 55px;
+}
+
+header .items-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .items-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main {
+  border: 1px blue solid;
+}
+
+footer {
+  border: 1px blue solid;
+}
