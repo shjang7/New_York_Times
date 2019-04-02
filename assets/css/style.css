@@ -28,6 +28,14 @@
   font-weight: 800;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
 button {
   cursor: pointer;
 }
@@ -104,7 +112,7 @@ header .items-2 button:hover {
 }
 
 main {
-  margin-top:60px;
+  margin-top: 60px;
   border: 1px blue solid;
   display: flex;
   justify-content: center;
@@ -141,28 +149,28 @@ main article p {
 section[name="recommandation"] {
   border: 1px blue solid;
   display: grid;
-  grid-template-columns: auto 250px;
+  grid-template-columns: auto 350px;
+}
+
+section[name="recommandation"] h3 {
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 div[name="article-with-img"] {
-  padding: 5px 20px;
-}
-
-div[name="article-with-img"] h3 {
-  text-transform: capitalize;
-  font-weight: bold;
+  padding: 5px 15px;
 }
 
 div[name="article-with-img"] .image-galley {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 15px;
 }
 
 div[name="article-with-img"] .image-galley div {
-  margin: 0 10px;
+  margin: 10px;
   line-height: 20px;
-  width: 240px;
+  width: 230px;
 }
 
 div[name="article-with-img"] img {
@@ -174,11 +182,22 @@ div[name="article-with-img"] .subletter-1 {
 }
 
 div[name="article-with-img"] h5 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 div[name="most-popular"] {
-  padding: 5px 20px;
+  padding: 5px 15px;
+}
+
+div[name="most-popular"] div {
+  margin: 20px 3px;
+  line-height: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+div[name="most-popular"] div hr {
+  border-top: 0.3px solid #eaecef;
+  margin-bottom: 15px;
 }
 
 footer {
