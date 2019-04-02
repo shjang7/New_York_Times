@@ -7,9 +7,19 @@
     "footer";
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #333;
+  background-color: white;
 }
 
 header {
@@ -17,11 +27,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 55px;
+  height: 50px;
+  padding: 0 10px;
 }
 
 header img {
-  height: 55px;
+  height: 50px;
 }
 
 header .items-3 {
@@ -30,10 +41,36 @@ header .items-3 {
   align-items: center;
 }
 
+header .items-3 div {
+  margin: 0 12px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+header .items-3 div:hover {
+  background-color: #ccc;
+}
+
 header .items-2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+header .items-2 button {
+  height: 35px;
+  padding: 5px 10px;
+  margin: 0 3px;
+  border-radius: 6px;
+  background-color: #336699;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+header .items-2 button:hover {
+  background-color: #204060;
 }
 
 main {
