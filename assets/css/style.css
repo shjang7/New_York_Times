@@ -162,11 +162,11 @@ main article .inflation .section-8 {
   top: 0;
   left: 0;
   z-index: 0;
-/*  display: flex;
+  /*  display: flex;
   flex-flow: column / wrap;*/
 
   display: grid;
-  grid-template: repeat(2,auto) / repeat(4,auto);
+  grid-template: repeat(2, auto) / repeat(4, auto);
   grid-row-gap: 30px;
 }
 
@@ -174,8 +174,8 @@ main article .inflation .item {
   display: block;
   position: static;
   margin: 140px 10px 20px 10px;
-  width:180px;
-  heigh:220px;
+  width: 180px;
+  height: 220px;
 }
 main article .inflation .item span {
   text-transform: uppercase;
@@ -246,12 +246,20 @@ footer {
 div[name="links-section"] {
   display: grid;
   grid-template-columns: auto 200px;
-  margin: 10px;
+  margin: 10px 35px;
 }
 
 div[name="links-section"] img {
   height: 30px;
+  margin-bottom: 20px;
+}
+
+div[name="links-section"] h4 {
+  font-weight: bold;
+  text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 div[name="links"] {
@@ -260,17 +268,20 @@ div[name="links"] {
 }
 
 div[name="links"] div {
-  margin: 10px 35px;
-}
-
-div[name="links"] h4 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: bolder;
+  width: 190px;
 }
 
 div[name="links"] li {
   line-height: 25px;
+}
+
+div[name="subscribe"] ul {
+  line-height: 2em;
+  margin: 29px 2px;
+}
+
+ul[name="subscribe-option"] {
+  font-weight: 900;
+  text-transform: capitalize;
+  line-height: 30px;
 }
