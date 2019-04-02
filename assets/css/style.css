@@ -9,19 +9,32 @@
 }
 
 .subletter-1 {
-  color: #cccccc;
+  color: rgb(154, 154, 154);
   font-size: 10px;
   text-transform: capitalize;
 }
 
 .subletter-2 {
-  color: #cccccc;
+  color: rgb(154, 154, 154);
   font-size: 12px;
   text-transform: capitalize;
 }
 
+.subletter-img {
+  font-size: 14px;
+}
+
+.strong-letter {
+  font-weight: 800;
+}
+
 button {
   cursor: pointer;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.2em;
 }
 
 body {
@@ -91,12 +104,14 @@ header .items-2 button:hover {
 }
 
 main {
+  margin-top:60px;
   border: 1px blue solid;
   display: flex;
   justify-content: center;
 }
 
 main article {
+  margin: 50px;
   width: 50%;
   position: relative;
   display: flex;
@@ -105,11 +120,22 @@ main article {
 }
 
 main article .add-on {
-  position: absolute;
-  left: 50;
+  position: relative;
+  left: -20%;
+  margin: 30px;
 }
 main article .add-on img {
-  width: 1000px;
+  width: 800px;
+}
+
+main article .add-on > p {
+  line-height: normal;
+  margin: 0;
+}
+
+main article p {
+  margin: 20px 0;
+  line-height: 1.5em;
 }
 
 section[name="recommandation"] {
