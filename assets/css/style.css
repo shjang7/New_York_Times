@@ -136,11 +136,15 @@ div[name="article-with-img"] .image-galley {
 div[name="article-with-img"] .image-galley div {
   margin: 0 10px;
   line-height: 20px;
-  width: 230px;
+  width: 240px;
 }
 
 div[name="article-with-img"] img {
-  height: 150px;
+  height: 160px;
+}
+
+div[name="article-with-img"] .subletter-1 {
+  text-align: right;
 }
 
 div[name="article-with-img"] h5 {
