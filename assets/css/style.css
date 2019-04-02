@@ -28,6 +28,7 @@
 
 .subletter-img {
   font-size: 14px;
+  line-height: 1.2em;
 }
 
 .strong-letter {
@@ -161,22 +162,23 @@ main article .inflation .section-8 {
   top: 0;
   left: 0;
   z-index: 0;
-  display: flex;
-  flex-flow: column / wrap;
-  align-content: flex-end;
-  justify-content: space-around;
-  /*  display: grid;
-  grid-template: repeat(2,auto) / repeat(4,auto);*/
+/*  display: flex;
+  flex-flow: column / wrap;*/
+
+  display: grid;
+  grid-template: repeat(2,auto) / repeat(4,auto);
+  grid-row-gap: 30px;
 }
 
 main article .inflation .item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  display: flex;
-  /*  display: grid;
-  grid-template: repeat(2,auto) / repeat(4,auto);*/
+  display: block;
+  position: static;
+  margin: 140px 10px 20px 10px;
+  width:180px;
+  heigh:220px;
+}
+main article .inflation .item span {
+  text-transform: uppercase;
 }
 
 section[name="recommandation"] {
