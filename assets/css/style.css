@@ -20,6 +20,12 @@
   text-transform: capitalize;
 }
 
+.subletter-3 {
+  color: #2c2c2d;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
 .subletter-img {
   font-size: 14px;
 }
@@ -92,7 +98,7 @@ header .items-3 div:hover {
 
 header .items-2 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -147,19 +153,19 @@ main article p {
 
 main article .inflation {
   left: -10;
-  z-index:-5;
+  z-index: -5;
 }
 
 main article .inflation .section-8 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index:0;
+  z-index: 0;
   display: flex;
   flex-flow: column / wrap;
   align-content: flex-end;
   justify-content: space-around;
-/*  display: grid;
+  /*  display: grid;
   grid-template: repeat(2,auto) / repeat(4,auto);*/
 }
 
@@ -167,9 +173,9 @@ main article .inflation .item {
   position: absolute;
   top: 0;
   left: 0;
-  z-index:0;
+  z-index: 0;
   display: flex;
-/*  display: grid;
+  /*  display: grid;
   grid-template: repeat(2,auto) / repeat(4,auto);*/
 }
 
@@ -229,4 +235,40 @@ div[name="most-popular"] div hr {
 
 footer {
   border: 1px blue solid;
+  display: grid;
+  grid-template-rows: auto 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+div[name="links-section"] {
+  display: grid;
+  grid-template-columns: auto 200px;
+  margin: 10px;
+}
+
+div[name="links-section"] img {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+div[name="links"] {
+  display: flex;
+  flex-flow: row / wrap;
+}
+
+div[name="links"] div {
+  margin: 10px 35px;
+}
+
+div[name="links"] h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+div[name="links"] li {
+  line-height: 25px;
 }
