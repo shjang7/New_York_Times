@@ -25,6 +25,12 @@ body {
   font-size: 10px;
   text-transform: capitalize;
 }
+
+.f-s {
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
 .f-m {
   font-size: 12px;
   text-transform: capitalize;
@@ -90,7 +96,7 @@ header {
 }
 
 header img {
-  height: 31px;
+  height: 38px;
 }
 
 header .items-3 {
@@ -171,9 +177,7 @@ main article .add-on > p {
   margin: 0;
 }
 
-main article
-
-main article p {
+main article main article p {
   margin: 20px 0;
   line-height: 1.5em;
 }
@@ -181,8 +185,8 @@ main article p {
 autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen*/
 main article .video iframe {
-  width:560px;
-  height:315px;
+  width: 560px;
+  height: 315px;
 }
 
 main article .inflation {
@@ -242,7 +246,6 @@ div[name="article-with-img"] .subletter-1 {
   text-align: right;
 }
 
-
 div[name="most-popular"] {
   padding: 5px 15px;
 }
@@ -260,7 +263,8 @@ div[name="most-popular"] div hr {
 
 footer {
   display: grid;
-  grid-template-rows: auto 50px;
+  grid-template-rows: auto 80px;
+  justify-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -311,4 +315,20 @@ ul[name="subscribe-option"] {
 
 ul[name="subscribe-option"] i {
   margin-right: 6px;
+}
+
+div[name="copyright"] {
+  display: block;
+  text-align: center;
+  width: 90%;
+  border-top: 0.5px #eaecef solid;
+}
+
+div[name="copyright"] div {
+  margin: 10px 0;
+}
+
+div[name="copyright"] a {
+  color: rgb(193, 188, 188);
+  margin-right: 10px;
 }
