@@ -36,13 +36,21 @@ body {
 .f-x-l {
   font-size: 14px;
 }
+.f-x-x-l {
+  font-size: 16px;
+}
 
 h1 {
   font-size: 30px;
+  font-weight: 800;
   line-height: 1.2em;
 }
 h3 {
   text-transform: capitalize;
+  font-weight: 800;
+}
+h4 {
+  font-size: 15px;
   font-weight: 800;
 }
 .f-h-s {
@@ -163,9 +171,18 @@ main article .add-on > p {
   margin: 0;
 }
 
+main article
+
 main article p {
   margin: 20px 0;
   line-height: 1.5em;
+}
+/*frameborder="0" allow="accelerometer;
+autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen*/
+main article .video iframe {
+  width:560px;
+  height:315px;
 }
 
 main article .inflation {
@@ -178,8 +195,6 @@ main article .inflation .section-8 {
   top: 0;
   left: 0;
   z-index: 0;
-  /*  display: flex;
-  flex-flow: column / wrap;*/
 
   display: grid;
   grid-template: repeat(2, auto) / repeat(4, auto);
@@ -227,9 +242,6 @@ div[name="article-with-img"] .subletter-1 {
   text-align: right;
 }
 
-div[name="article-with-img"] h5 {
-  font-size: 16px;
-}
 
 div[name="most-popular"] {
   padding: 5px 15px;
@@ -265,11 +277,8 @@ div[name="links-section"] img {
 }
 
 div[name="links-section"] h4 {
-  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: bolder;
 }
 
 div[name="links"] {
