@@ -163,7 +163,6 @@ header .items-2 button:hover {
 
 main {
   margin-top: 60px;
-  border: 1px blue solid;
   display: flex;
   justify-content: center;
 }
@@ -228,7 +227,6 @@ main article .inflation .item span {
 }
 
 section[name="recommandation"] {
-  border: 1px blue solid;
   display: grid;
   grid-template-columns: auto 350px;
 }
@@ -272,10 +270,27 @@ div[name="most-popular"] div hr {
 
 footer {
   display: grid;
-  grid-template-rows: auto 80px;
+  grid-template-rows: auto auto 80px;
   justify-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+div[name="links-logo"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 95%;
+  border-top: 4px #d0d2d3 double;
+  padding-top: 10px;
+}
+
+div[name="links-logo"] img {
+  height: 28px;
+}
+
+div[name="links-logo"] a:link {
+  color: #387cc1;
 }
 
 div[name="links-section"] {
@@ -303,9 +318,13 @@ div[name="links"] div {
   width: 190px;
 }
 
-
 div[name="subscribe"] {
-  margin-top: 53px;
+  border-left: 1px #d0d2d3 solid;
+  padding-left: 12px;
+}
+
+div[name="subscribe"] ul:nth-of-type(2) {
+  border-bottom: 1px #d0d2d3 solid;
 }
 
 div[name="subscribe"] ul {
@@ -324,15 +343,15 @@ ul[name="subscribe-option"] i {
 div[name="copyright"] {
   display: block;
   text-align: center;
-  width: 90%;
-  border-top: 0.5px #eaecef solid;
+  width: 95%;
+  border-top: 0.5px #d3d6d8 solid;
 }
 
 div[name="copyright"] div {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 div[name="copyright"] a {
   color: rgb(193, 188, 188);
-  margin-right: 10px;
+  margin-right: 12px;
 }
