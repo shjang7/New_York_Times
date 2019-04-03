@@ -21,6 +21,10 @@ body {
 .f-c-d {
   color: rgb(44, 44, 44);
 }
+.f-c-blk {
+  color: black;
+}
+
 .f-x-s {
   font-size: 10px;
   text-transform: capitalize;
@@ -82,14 +86,6 @@ h4 {
   font-weight: 800;
 }
 
-a:link {
-  text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
 
 button {
   cursor: pointer;
@@ -126,6 +122,15 @@ header .items-3 div {
 div[for="header-icons"] {
   display: flex;
 }
+header a:link{
+  color:black;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: black;
+}
+
 
 div[for="header-icons"] i {
   padding: 10px;
@@ -162,7 +167,7 @@ header .items-2 button:hover {
 }
 
 main {
-  margin-top: 60px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -175,36 +180,43 @@ main article {
   flex-direction: column;
 }
 
-main article .add-on {
+main article .img-box {
   position: relative;
-  left: -20%;
+  left: -15%;
   margin: 30px 0;
 }
-main article .add-on img {
+main article .img-box img {
   width: 800px;
 }
 
-main article .add-on > p {
+main article .img-box > p {
+  margin: 0;
+}
+
+main article .video-box iframe {
+  margin: 10px 0;
+}
+
+main article .video-box > p {
   margin: 0;
 }
 
 main article p {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 /*frameborder="0" allow="accelerometer;
 autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen*/
-main article .video iframe {
+main article .video-box iframe {
   width: 560px;
   height: 315px;
 }
 
-main article .inflation {
-  left: -10;
+main article section .img-box {
   z-index: -5;
 }
 
-main article .inflation .section-8 {
+main article section .section-8 {
   position: absolute;
   top: 0;
   left: 0;
@@ -215,14 +227,14 @@ main article .inflation .section-8 {
   grid-row-gap: 30px;
 }
 
-main article .inflation .item {
+main article section .item {
   display: block;
   position: static;
   margin: 140px 10px 20px 10px;
   width: 180px;
   height: 220px;
 }
-main article .inflation .item span {
+main article section .item span {
   text-transform: uppercase;
 }
 
@@ -267,6 +279,14 @@ div[name="most-popular"] div hr {
   border-top: 0.3px solid #eaecef;
   margin-bottom: 15px;
 }
+div[name="most-popular"] a:link {
+  color:black;
+  text-decoration: none;
+}
+div[name="most-popular"] a:visited {
+  color: black;
+}
+
 
 footer {
   display: grid;
