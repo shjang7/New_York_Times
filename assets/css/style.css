@@ -86,7 +86,6 @@ h4 {
   font-weight: 800;
 }
 
-
 button {
   cursor: pointer;
 }
@@ -122,15 +121,14 @@ header .items-3 div {
 div[for="header-icons"] {
   display: flex;
 }
-header a:link{
-  color:black;
+header a:link {
+  color: black;
   text-decoration: none;
 }
 
 header a:visited {
   color: black;
 }
-
 
 div[for="header-icons"] i {
   padding: 10px;
@@ -250,20 +248,23 @@ div[name="article-with-img"] {
 div[name="article-with-img"] .image-galley {
   display: flex;
   flex-wrap: wrap;
-  margin: 15px;
+  margin-top: 20px;
 }
 
 div[name="article-with-img"] .image-galley div {
-  margin: 10px;
-  width: 230px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  width: 260px;
 }
 
 div[name="article-with-img"] img {
-  height: 160px;
+  width: 260px;
 }
 
-div[name="article-with-img"] .subletter-1 {
+div[name="article-with-img"] img + p {
+  margin-top: 4px;
   text-align: right;
+  line-height: 1.5em;
 }
 
 div[name="most-popular"] {
@@ -280,13 +281,17 @@ div[name="most-popular"] div hr {
   margin-bottom: 15px;
 }
 div[name="most-popular"] a:link {
-  color:black;
+  color: black;
   text-decoration: none;
 }
 div[name="most-popular"] a:visited {
   color: black;
 }
 
+div[name="article-title"] {
+  border-top: 1px #e4e6e8 solid;
+  padding: 10px 0;
+}
 
 footer {
   display: grid;
