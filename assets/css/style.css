@@ -59,9 +59,22 @@ h4 {
   font-size: 15px;
   font-weight: 800;
 }
+.f-h-x-s {
+  line-height: 1.05em;
+}
 .f-h-s {
+  line-height: 1.1em;
+}
+.f-h-m {
   line-height: 1.2em;
 }
+.f-h-l {
+  line-height: 1.5em;
+}
+.f-h-x-l {
+  line-height: 2em;
+}
+
 .f-th-s {
   font-weight: 600;
 }
@@ -173,13 +186,11 @@ main article .add-on img {
 }
 
 main article .add-on > p {
-  line-height: normal;
   margin: 0;
 }
 
-main article main article p {
+main article p {
   margin: 20px 0;
-  line-height: 1.5em;
 }
 /*frameborder="0" allow="accelerometer;
 autoplay; encrypted-media; gyroscope;
@@ -234,7 +245,6 @@ div[name="article-with-img"] .image-galley {
 
 div[name="article-with-img"] .image-galley div {
   margin: 10px;
-  line-height: 20px;
   width: 230px;
 }
 
@@ -252,7 +262,6 @@ div[name="most-popular"] {
 
 div[name="most-popular"] div {
   margin: 20px 3px;
-  line-height: 22px;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -294,23 +303,18 @@ div[name="links"] div {
   width: 190px;
 }
 
-div[name="links"] li {
-  line-height: 25px;
-}
 
 div[name="subscribe"] {
   margin-top: 53px;
 }
 
 div[name="subscribe"] ul {
-  line-height: 2em;
   margin: 15px 2px;
 }
 
 ul[name="subscribe-option"] {
   font-weight: 900;
   text-transform: capitalize;
-  line-height: 30px;
 }
 
 ul[name="subscribe-option"] i {
