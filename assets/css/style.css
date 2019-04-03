@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: repeat(4,auto);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas:
     "header"
     "main"
@@ -26,7 +26,7 @@ body {
   text-transform: capitalize;
 }
 .f-m {
-  font-size:12px;
+  font-size: 12px;
   text-transform: capitalize;
 }
 .f-l {
@@ -55,9 +55,9 @@ h3 {
   font-weight: 800;
 }
 
-
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
@@ -68,55 +68,64 @@ button {
   cursor: pointer;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 40px;
-  padding: 1px 10px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
   background-color: white;
-  box-shadow: 1px 0 3px 2px grey;
+  box-shadow: 1px 0 5px 1px rgba(184, 184, 184, 0.482);
 }
 
 header img {
-  height: 25px;
+  height: 31px;
 }
 
 header .items-3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 15px;
 }
 
 header .items-3 div {
-  margin: 0 12px;
+  margin: 0 8px;
 }
 
-header .items-3 div a:link {
-  color: black;
-  text-decoration: none;
+div[for="header-icons"] {
+  display: flex;
 }
-header .items-3 div:hover {
-  background-color: #ccc;
+
+div[for="header-icons"] i {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+div[for="header-icons"] i:hover {
+  background-color: #d3d7d75c;
+}
+
+div[for="header-text"]:hover {
+  text-decoration: underline;
 }
 
 header .items-2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 15px;
 }
 
 header .items-2 button {
-  height: 35px;
-  padding: 5px 10px;
+  height: 33px;
+  padding: 5px 12px;
   margin: 0 3px;
-  border-radius: 6px;
-  background-color: #336699;
+  border-radius: 4px;
+  background-color: #6c8fb3;
   color: white;
   text-transform: uppercase;
 }
@@ -194,7 +203,6 @@ section[name="recommandation"] {
   grid-template-columns: auto 350px;
 }
 
-
 div[name="article-with-img"] {
   padding: 5px 15px;
 }
@@ -239,7 +247,6 @@ div[name="most-popular"] div hr {
 }
 
 footer {
-  border: 1px blue solid;
   display: grid;
   grid-template-rows: auto 50px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -278,13 +285,21 @@ div[name="links"] li {
   line-height: 25px;
 }
 
+div[name="subscribe"] {
+  margin-top: 53px;
+}
+
 div[name="subscribe"] ul {
   line-height: 2em;
-  margin: 29px 2px;
+  margin: 15px 2px;
 }
 
 ul[name="subscribe-option"] {
   font-weight: 900;
   text-transform: capitalize;
   line-height: 30px;
+}
+
+ul[name="subscribe-option"] i {
+  margin-right: 6px;
 }
