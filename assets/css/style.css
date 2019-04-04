@@ -171,16 +171,12 @@ header .items-2 button:hover {
 
 main {
   margin-top: 10px;
-  display: grid;
-  grid-column: auto 50px;
-  /*display: flex;
-  flex: 1 30px;
-  flex-direction: row;
-  justify-content: center;*/
+  display: flex;
+  justify-content: center;
 }
 
 main article {
-  margin: 50px 25%;
+  margin: 50px;
   width: 50%;
   position: relative;
   display: flex;
@@ -276,20 +272,18 @@ main[name="order-link"] a {
 }
 
 section[name="side-bar"] {
-  display: flex;
-  flex-flow: column wrap;
-
-  /*
-  justify-content:center;
-  align-items: center;*/
-  background-color: pink;
-  top:0;
+  position: absolute;
+  top: 1500px;
   right:0;
-  left-margin:200px;
-  z-index: 5;
-  float:right;
-  width:500px;
-  height:40px;
+  z-index: -5;
+  display: flex;
+  flex-direction: column;
+
+  background-color: pink;
+  justify-content: space-between;
+  /* items can be divisions */
+  width:200px;
+  height:1000px;
 }
 
 section[name="recommandation"] {
