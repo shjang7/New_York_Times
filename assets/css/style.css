@@ -212,12 +212,11 @@ div[name="mid-img"] img {
 }
 
 main .img-box p:nth-of-type(1) {
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 main .img-box p:nth-of-type(2) {
-    color: rgb(154, 154, 154);
+  color: rgb(154, 154, 154);
 }
-
 
 main .video-box iframe {
   margin-top: 20px;
@@ -259,23 +258,29 @@ div[name="section-8"] .item span {
   text-transform: uppercase;
 }
 
-main[name="order-link"] a{
+main[name="order-link"] a {
   color: rgb(193, 188, 188);
   text-decoration: none;
 }
 
 section[name="recommandation"] {
   display: grid;
-  grid-template-columns: auto 300px;
-  margin: 0 30px;
+  grid-template-columns: 72% 28%;
+  margin: 0 auto;
+  width: 95%;
 }
 
 section[name="recommandation"] a:link {
   text-decoration: none;
+  color: black;
+}
+
+section[name="recommandation"] a:visited {
+  color: black;
 }
 
 section[name="recommandation"] a:hover {
-  text-decoration: underline;
+  color: rgb(186, 180, 180);
 }
 
 div[name="article-with-img"] {
@@ -291,11 +296,11 @@ div[name="article-with-img"] .image-galley {
 div[name="article-with-img"] .image-galley div {
   margin-right: 20px;
   margin-bottom: 25px;
-  width: 260px;
+  width: 255px;
 }
 
 div[name="article-with-img"] img {
-  width: 260px;
+  width: 255px;
 }
 
 div[name="article-with-img"] img + p {
@@ -305,7 +310,7 @@ div[name="article-with-img"] img + p {
 }
 
 div[name="most-popular"] {
-  padding: 5px 15px;
+  padding: 5px 0 0 15px;
 }
 
 div[name="most-popular"] div {
@@ -317,13 +322,6 @@ div[name="most-popular"] div hr {
   border-top: 0.3px solid #eaecef;
   margin-bottom: 15px;
 }
-/* div[name="most-popular"] a:link {
-  color: black;
-  text-decoration: none;
-}
-div[name="most-popular"] a:visited {
-  color: black;
-} */
 
 div[name="article-title"] {
   border-top: 1px #e4e6e8 solid;
@@ -340,6 +338,11 @@ footer {
 
 footer a:link {
   text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 div[name="links-logo"] {
@@ -407,7 +410,7 @@ ul[name="subscribe-option"] i {
 }
 
 div[name="copyright"] {
-  display: block;
+  /* display: block; */
   text-align: center;
   width: 95%;
   border-top: 0.5px #d3d6d8 solid;
