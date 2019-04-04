@@ -50,6 +50,10 @@ body {
   font-size: 16px;
 }
 
+.f-3x-l {
+  font-size: 22px;
+}
+
 h1 {
   font-size: 30px;
   font-weight: 800;
@@ -141,7 +145,9 @@ div[for="header-text"] {
 }
 
 div[for="header-icons"] i:hover {
-  background-color: #d3d7d75c;
+  background-color: rgba(238, 239, 239, 0.8);
+  transition: all 1s ease; /* delays for 1 second */
+  -webkit-transition: all 1.3s ease; /* for Safari & Chrome */
 }
 
 div[for="header-text"]:hover {
@@ -184,10 +190,39 @@ main article {
 }
 
 main .date {
- display : inline-block;
+  display: inline-block;
 }
-main .date+.icons {
-  float : right;
+main .date + .icons {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .icons a:link {
+  text-decoration: none;
+  color: black;
+}
+
+div[for="social-share"] i {
+  padding: 9px;
+  border-radius: 16px;
+  margin-right: 9px;
+  background-color: rgba(238, 239, 239, 0.8);
+  border: 1px rgba(238, 239, 239, 0.8) solid;
+}
+
+div[for="social-share"] i:hover {
+  background-color: white;
+  border: 1px rgba(238, 239, 239) solid;
+}
+
+div[for="other-icons"] i {
+  padding: 5px;
+  color: rgba(130, 128, 128, 0.859);
+}
+
+div[for="other-icons"] i:hover {
+  color: rgba(238, 239, 239, 0.8);
 }
 
 main article .img-box {
@@ -274,7 +309,7 @@ main[name="order-link"] a {
 section[name="side-bar"] {
   position: absolute;
   top: 1500px;
-  right:0;
+  right: 0;
   z-index: -5;
   display: flex;
   flex-direction: column;
@@ -282,8 +317,8 @@ section[name="side-bar"] {
   background-color: pink;
   justify-content: space-between;
   /* items can be divisions */
-  width:200px;
-  height:1000px;
+  width: 200px;
+  height: 1000px;
 }
 
 section[name="recommandation"] {
