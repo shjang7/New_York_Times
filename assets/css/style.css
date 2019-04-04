@@ -177,7 +177,6 @@ header .items-2 {
   margin-right: 15px;
 }
 
-
 main {
   margin-top: 10px;
   display: flex;
@@ -207,17 +206,16 @@ main .icons a:link {
   color: black;
 }
 
-div[for="social-share"] i {
-  padding: 9px;
-  border-radius: 50%;
+div[for="social-share"] a {
   margin-right: 9px;
-  background-color: rgba(238, 239, 239, 0.8);
-  border: 1px rgba(238, 239, 239, 0.8) solid;
+}
+
+div[for="social-share"] i:first-of-type {
+  color: rgba(238, 239, 239, 0.8);
 }
 
 div[for="social-share"] i:hover {
   background-color: white;
-  border: 1px rgba(238, 239, 239) solid;
 }
 
 div[for="other-icons"] i {
@@ -318,6 +316,22 @@ main span[name="order-link"] a {
   text-decoration: none;
 }
 
+div[for="comment-share"] {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+div[for="comment-share"] a {
+  text-decoration: none;
+  color: black;
+}
+
+div[for="comment-share"] button {
+  padding: 5px 90px;
+  text-transform: uppercase;
+}
+
 section[name="side-bar"] {
   position: absolute;
   top: 1500px;
@@ -350,7 +364,7 @@ section[name="side-bar"] .picks {
 }
 
 section[name="side-bar"] .sign-up {
-  width:150px;
+  width: 150px;
 }
 
 .sign-up .text {
