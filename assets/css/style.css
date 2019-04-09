@@ -1,3 +1,26 @@
+@media screen and (min-width: 1480px){
+  .side-bar:nth-child(n+1) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1080px){
+  header img {
+    margin-left: 100px!important;
+    margin-right: 100px!important;
+  }
+  .side-bar:nth-child(n+1){
+    display: none;
+  }
+}
+@media screen and (max-width: 800px){
+  header .items-3:nth-child(n+1) {
+    display: none;
+  }
+  header .items-2:nth-child(n+1) {
+    display: none;
+  }
+}
+
 .container {
   display: grid;
   grid-template-rows: repeat(4, auto);
@@ -116,7 +139,7 @@ button:hover {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 42px;
   position: fixed;
@@ -129,6 +152,8 @@ header {
 
 header img {
   height: 29px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 header .items-3 {
@@ -178,17 +203,13 @@ header .items-2 {
 }
 
 main {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+  margin-top: 60px;
 }
 
 main article {
-  margin: 50px;
+  margin: auto;
   width: 50%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  max-width: 600px;
   background-color: white;
 }
 
@@ -245,9 +266,13 @@ main article .img-box {
   margin: 30px 0;
   left: -15%;
 }
-.jumbo-img img {
-  width: 820px;
+
+.jumbo-img img,
+.jumbo-img p {
+  width: 130%;
+  max-width: 1000px;
 }
+
 
 .large-img {
   position: relative;
@@ -259,9 +284,10 @@ main article .img-box {
   z-index: -5;
 }
 .mid-img {
+  width: 100%;
+  max-width: 600px;
   position: relative;
   margin: 30px 0;
-  width: 600px;
 }
 .mid-img img {
   width: inherit;
@@ -276,17 +302,16 @@ main .img-box p:nth-of-type(2) {
 }
 
 main .video-box iframe {
+  min-width: 420px;
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
   margin-top: 20px;
   margin-bottom: 5px;
 }
 
 main p {
   margin: 10px 0;
-}
-
-main .video-box iframe {
-  width: 560px;
-  height: 315px;
 }
 
 .section-8 {
@@ -381,6 +406,7 @@ main .order-link a {
   grid-template-columns: 72% 28%;
   margin: 0 auto;
   width: 95%;
+  max-width: 1200px;
 }
 
 .recommandation a:link {
@@ -463,6 +489,7 @@ footer a:hover {
   justify-content: space-between;
   align-items: baseline;
   width: 95%;
+  max-width: 1200px;
   border-top: 4px #d0d2d3 double;
   padding-top: 10px;
 }
