@@ -5,4 +5,4 @@
 - Collaborator : [shjang7](https://github.com/shjang7), [kelvin8773](https://github.com/kelvin8773) <br />
 - Used skills : flexbox, grid, position, float <br />
 - language : html/css <br />
-- following link : [You can see our webpage with this link](https://shjang7.github.io/New_York_Times/)
+- following link : [You can see our webpage with this link](https://shjang7.github.io/new-york-times/)
